@@ -37,7 +37,7 @@
     "details": "C 语言笔记",
     "link": "https://tnotesjs.github.io/TNotes.c/",
     "created_at": 1737437192000,
-    "updated_at": 1782713831000,
+    "updated_at": 1782714989000,
     "days_since_birth": 9863
   },
   "port": 9339,
@@ -45,10 +45,6 @@
     {
       "text": "🏠 Home",
       "link": "/"
-    },
-    {
-      "text": "⚙️ Settings",
-      "link": "/Settings"
     },
     {
       "text": "📒 TNotes",
