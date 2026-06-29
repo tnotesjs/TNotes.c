@@ -2,24 +2,24 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 推荐用什么 IDE？](#3--推荐用什么-ide)
-- [4. 🤔 需要安装哪些 VSCode 插件？](#4--需要安装哪些-vscode-插件)
-- [5. 🤔 如何在 macOS 上初始化 C、C++ 的基本学习环境？](#5--如何在-macos-上初始化-cc-的基本学习环境)
-- [6. 🤔 Code Runner 一键运行 C、CPP 的原理是？](#6--code-runner-一键运行-ccpp-的原理是)
-- [7. 🤔 如何让 git 忽略编译产物？](#7--如何让-git-忽略编译产物)
-- [8. 🤔 如何在 Windows 上初始化 C、C++ 的基本学习环境？](#8--如何在-windows-上初始化-cc-的基本学习环境)
-- [9. 💻 demos.1 - 第一个 C 语言程序 - 在控制台打印 Hello World](#9--demos1---第一个-c-语言程序---在控制台打印-hello-world)
-- [10. 🔗 引用](#10--引用)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 推荐用什么 IDE？](#3-推荐用什么-ide)
+- [4. 需要安装哪些 VSCode 插件？](#4-需要安装哪些-vscode-插件)
+- [5. 如何在 macOS 上初始化 C、C++ 的基本学习环境？](#5-如何在-macos-上初始化-cc-的基本学习环境)
+- [6. Code Runner 一键运行 C、CPP 的原理是？](#6-code-runner-一键运行-ccpp-的原理是)
+- [7. 如何让 git 忽略编译产物？](#7-如何让-git-忽略编译产物)
+- [8. 如何在 Windows 上初始化 C、C++ 的基本学习环境？](#8-如何在-windows-上初始化-cc-的基本学习环境)
+- [9. demos.1 - 第一个 C 语言程序 - 在控制台打印 Hello World](#9-demos1---第一个-c-语言程序---在控制台打印-hello-world)
+- [10. 引用](#10-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - 在 macOS 和 windows 上搭建 C、C++ 的基本学习环境
 
-## 2. 🫧 评价
+## 2. 评价
 
 这篇笔记主要介绍如何在 Windows 和 macOS 上搭建 C、C++ 的基本学习环境，确保在学习语法及语言核心特性阶段所编写的程序可以编译并执行。
 
@@ -27,16 +27,16 @@
 
 环境搭建完成后，会编写第一个 Hello World 程序，并简单介绍 VSCode 中的插件 Code Runner 快速执行 `.c`、`.cpp` 文件的基本原理。
 
-## 3. 🤔 推荐用什么 IDE？
+## 3. 推荐用什么 IDE？
 
 目前（26.02）使用的代码编辑器是 VSCode，有需要的可自行前往 [VSCode 官网][1] 下载。
 
-## 4. 🤔 需要安装哪些 VSCode 插件？
+## 4. 需要安装哪些 VSCode 插件？
 
 - [C/C++ (Microsoft) 插件][2]
 - [Code Runner 插件][3]
 
-## 5. 🤔 如何在 macOS 上初始化 C、C++ 的基本学习环境？
+## 5. 如何在 macOS 上初始化 C、C++ 的基本学习环境？
 
 macOS 自带 clang 编译器，可直接使用：
 
@@ -68,7 +68,7 @@ clang --version
 
 ![img](https://cdn.jsdelivr.net/gh/tnotesjs/imgs-2026@main/2026-02-02-00-00-05.png)
 
-## 6. 🤔 Code Runner 一键运行 C、CPP 的原理是？
+## 6. Code Runner 一键运行 C、CPP 的原理是？
 
 打开 VSCode 设置，搜索 `code-runner.executorMap`，在配置文件中查看 `code-runner.executorMap` 的配置。
 
@@ -88,7 +88,7 @@ clang --version
 
 由此可见，如果你本地没有安装 gcc 编译器，那么 Code Runner 插件就无法正常工作。
 
-## 7. 🤔 如何让 git 忽略编译产物？
+## 7. 如何让 git 忽略编译产物？
 
 ::: info 备注
 
@@ -141,7 +141,7 @@ VSCode Code Runner 插件配置示例：
 - `./temp_executable`：运行临时可执行文件
 - `rm temp_executable`：运行后删除临时可执行文件，保持目录整洁
 
-## 8. 🤔 如何在 Windows 上初始化 C、C++ 的基本学习环境？
+## 8. 如何在 Windows 上初始化 C、C++ 的基本学习环境？
 
 安装编译器（推荐两种方案）：
 
@@ -166,7 +166,7 @@ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 gcc --version
 ```
 
-## 9. 💻 demos.1 - 第一个 C 语言程序 - 在控制台打印 Hello World
+## 9. demos.1 - 第一个 C 语言程序 - 在控制台打印 Hello World
 
 ::: code-group
 
@@ -211,7 +211,7 @@ gcc --version
 - CMD 环境：`gcc 1.c -o 1 && .\1`
 - 后缀 .exe 可加可不加
 
-## 10. 🔗 引用
+## 10. 引用
 
 - [VSCode 官网][1]
 - [C/C++ (Microsoft) 插件][2]
