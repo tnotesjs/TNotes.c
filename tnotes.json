@@ -3,7 +3,7 @@
   "name": "TNotes.c",
   "description": "C 语言笔记",
   "icon": {
-    "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs-2026@main/assets/icon--c.svg"
+    "src": "../assets/.tn-kb-icon.svg"
   },
   "repositoryUrl": "https://github.com/tnotesjs/TNotes.c",
   "port": 9339,
